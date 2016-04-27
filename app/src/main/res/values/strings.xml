@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DroidMeter</string>
+
+    <string name="app_title">Reading values</string>
+    <string name="refreshing">Refreshing...</string>
+    <string name="action_changedetect">Change detection</string>
+    <string name="action_resetvalues">Reset</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

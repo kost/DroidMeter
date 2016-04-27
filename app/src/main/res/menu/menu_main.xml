@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.kost.android.droidmeter.SerialConsoleActivity">
+    <item android:id="@+id/action_changedetect" android:orderInCategory="100"
+        android:title="@string/action_changedetect" app:showAsAction="never" />
+    <item android:id="@+id/action_resetvalues" android:orderInCategory="101"
+        android:title="@string/action_resetvalues" app:showAsAction="never" />
+    <item android:id="@+id/action_settings" android:orderInCategory="200"
+        android:title="@string/action_settings" app:showAsAction="never" />
+
+</menu>

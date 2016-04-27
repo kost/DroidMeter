@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.kost.android.droidmeter.SerialConsoleActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/demoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/app_title"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#eeeeee" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+            android:id="@+id/demoScroller"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/consoleText"
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="monospace" />
+        </ScrollView>
+
+            <com.androidplot.xy.XYPlot
+                android:id="@+id/plot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                ap:label="Multimeter values"
+                ap:rangeLabel="values"
+                ap:domainLabel="count"
+                ap:borderColor="#000000"
+                ap:backgroundColor="#FFFFFF"
+                ap:graphBackgroundColor="#FFFFFF"
+                ap:gridBackgroundColor="#111111"
+                ap:gridPaddingLeft="20dp"
+                ap:gridPaddingRight="20dp"
+                ap:gridPaddingTop="20dp"
+                ap:gridPaddingBottom="20dp"
+                ap:labelTextSize="20sp"
+                ap:rangeLabelTextSize="13sp"
+                ap:domainLabelTextSize="13sp"
+                ap:graphMarginTop="20dp"
+                ap:graphMarginBottom="40dp"
+                ap:graphMarginLeft="15dp"
+                ap:graphMarginRight="10dp"
+                ap:graphDomainLineColor="#000000"
+                ap:graphDomainLineThickness="1dp"
+                ap:graphRangeLineColor="#000000"
+                ap:graphRangeLineThickness="1dp"
+                ap:rangeTickLabelTextSize="15sp"
+                ap:rangeOriginTickLabelTextSize="15sp"
+                ap:domainTickLabelTextSize="15sp"
+                ap:domainOriginTickLabelTextSize="15sp"
+                ap:legendTextSize="15sp"
+                ap:legendIconHeight="15dp"
+                ap:legendIconWidth="15dp"
+                ap:legendHeight="25dp"
+                ap:legendAnchorPosition="right_bottom"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
