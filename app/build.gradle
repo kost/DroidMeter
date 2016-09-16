@@ -17,6 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    // This enables long timeouts required on slow environments, e.g. Travis
+    adbOptions {
+        timeOutInMs 20 * 60 * 1000  // 20 minutes
+        installOptions "-d","-t"
+    }
 }
 
 dependencies {
